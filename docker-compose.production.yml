@@ -29,7 +29,7 @@ services:
     image: redc0mrade/kittygram_gateway:latest
     env_file: .env
     volumes:
-      - static_volume:/backend_static/
+      - static_volume:/static/
       - media_volume:/media/
     ports:
       - 9000:80
