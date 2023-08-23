@@ -6,7 +6,7 @@ volumes:
   media_volume:
 
 services:
-  db:
+  kittygram_db:
     image: postgres:13.10
     env_file: .env
     volumes:
@@ -18,7 +18,7 @@ services:
       - static_volume:/backend_static
       - media_volume:/media
     depends_on:
-      - db
+      - kittygram_db
   frontend:
     image: redc0mrade/kittygram_frontend:latest
     env_file: .env
