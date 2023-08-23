@@ -3,6 +3,7 @@ version: '3'
 volumes:
   kittygram_data:
   static:
+  media:
 
 services:
   kittygram_db:
@@ -15,6 +16,7 @@ services:
     env_file: .env
     volumes:
       - static:/backend_static
+      - media:/app/media/
     depends_on:
       - kittygram_db
   frontend:
@@ -27,6 +29,7 @@ services:
     build: ./nginx/
     env_file: .env
     ports:
-      - 8080:80
+      - 9000:80
     volumes:
       - static:/static
+      - media: /media
