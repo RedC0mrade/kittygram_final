@@ -1,11 +1,11 @@
 
 # Проект Kittygram - Яндекс.Практикум
 
-![Логотип Kittygram](https://kittygran.hopto.org/favicon.ico) - Ссылка на проект
+![Логотип Kittygram](https://kittygran.hopto.org/favicon.ico)
 
 Добро пожаловать в репозиторий проекта Kittygram! Этот проект призван создать платформу социальных медиа, основанную на обмене очаровательными фотографиями кошек. Независимо от того, являетесь ли вы любителем кошек или ищете способ поднять себе настроение, Kittygram создан для вас.
 
-## [Kittygram](https://github.com/RedC0mrade/kittygram_final)
+## Ссылка на проект - [Kittygram](https://github.com/RedC0mrade/kittygram_final)
 
 ## Оглавление
 
