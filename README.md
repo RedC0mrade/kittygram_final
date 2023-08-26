@@ -1,8 +1,6 @@
-
+![Состояние проекта](https://github.com/RedC0mrade/kittygram_final/actions/workflows/main.yml/badge.svg)
 # Проект Kittygram - Яндекс.Практикум
-
 ![Логотип Kittygram](https://kittygran.hopto.org/favicon.ico)
-
 Добро пожаловать в репозиторий проекта Kittygram! Этот проект призван создать платформу социальных медиа, основанную на обмене очаровательными фотографиями кошек. Независимо от того, являетесь ли вы любителем кошек или ищете способ поднять себе настроение, Kittygram создан для вас.
 
 ## Ссылка на проект - [Kittygram](https://kittygran.hopto.org)
@@ -65,16 +63,35 @@ Kittygram - это проект, разработанный в рамках ку
 2. Чтобы развернуть Kittygram на удаленном сервере, выполните следующие шаги:
 
    Подготовьте окружение на удаленном сервере с необходимым программным обеспечением (Docker, Docker Compose и т.д.).
-
-3. Клонируйте репозиторий на удаленном сервере:
+3. Выполните команду fork, на своём аккаунте github из этого репозитория 
+## Ссылка Репозиторий - [RedC0mrade](https://github.com/RedC0mrade/kittygram_final)
+4. Клонируйте репозиторий на удаленном сервере:
 
    ```bash
-   git clone https://github.com/ваше-имя/kittygram.git
-   cd kittygram
+
+   git clone https://github.com/ваше-имя/kittygram_final.git
+   cd kittygram_final
 4. Выполните скачивание и развертывание продакшн версии:
 ```bash
    docker-compose -f docker-compose.production.yml pull
    docker-compose -f docker-compose.production.yml up -d
+```
+установка миграций и сбор статики произойдет в автоматическом режиме.
+5. Для успешного развертывания проекта необходимо в главной директории создать файл .env, где будут указаны следуюшие параметры:
+- POSTGRES_USER
+- POSTGRES_PASSWORD
+- POSTGRES_DB
+- DB_HOST
+- DB_PORT
+- DB_NAME
+- SECRET_KEY
+- ALLOWED_HOSTS
+- DEBUG
+
+6. Для создания пользователя с правами администратора необходимо в терминале выполнить команду:
+```bash
+   cd backend
+   py manage.py createsuperuser
 ```
 Или выполните команду:
    ```bash
@@ -91,7 +108,7 @@ Kittygram - это платформа социальных медиа, где п
 Проект использует ряд технологий, включая, но не ограничиваясь:
 
 - Фронтенд: HTML, CSS, JavaScript, React
-- Бэкенд: Python, Django, PostgreSQL
+- Бэкенд: Python, Django, PostgreSQL, Django Rest Framework, Djoser
 ### Примечание 
 Развертывание: Docker, Docker Compose
 Пожалуйста, обратите внимание, что приведенный выше список представляет общий обзор, и фактические использованные технологии и инструменты могут различаться. Для получения более подробной информации ознакомьтесь с исходным кодом проекта и документацией.
